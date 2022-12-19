@@ -1,0 +1,505 @@
+html{
+	scroll-behavior: smooth;
+	transition-duration: 4s;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+#nav{
+	background-color: #000;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-bottom: 2vh;
+	padding-top: 4vh;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+#btn-text{
+	text-decoration: none;
+	color: white;
+}
+
+.bg{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.bgpic{
+	border: solid red;
+	margin-top: 14vh;
+	width: 60%;
+	height: fit-content;
+	border-radius: 5%;
+	margin-bottom: 2vh;
+}
+
+.intro{
+	width: 100%;
+	height: fit-content;
+    background-color: black;
+}
+
+.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: red;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: red;
+	transition: .4s;
+}
+.btn{
+	background-color:red;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+
+.newslatter{
+	margin: auto auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: fit-content;
+}
+
+.h5{
+	margin-top: 2vh;
+}
+
+.meal-search-box{
+	margin-top: 3vh;
+	width: 500px;
+	max-width: 100%;
+	position: relative;
+	margin-bottom: 3vh;
+}
+.meal-search-box input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: 2px solid red;
+	outline: none;
+	border-radius: 30px;
+}
+.about{
+	width: 100%;
+	padding: 10px 0px;
+	background-color: #000000;
+	height: fit-content;
+}
+.details{
+	margin-top: 20px;
+	color: white;
+	width: 60vw;
+}
+
+/*********************************/
+
+.food{
+	width: 100%;
+	height: fit-content;
+}
+
+section{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+	background-color: black;
+}
+
+/*  */
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+	color: white;
+}
+
+/*  */
+.container{
+    min-height: 100vh;
+}
+.meal-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgb(0, 0, 0);
+    text-align: center;
+}
+.meal-search{
+    margin: 2rem 0;
+}
+.meal-search cite{
+    font-size: 1rem;
+}
+.meal-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+}
+
+h2{
+	color: white;
+}
+
+.randomPick{
+	width: 60%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.randompick2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#randompick{
+	display: flex;
+	justify-content: center;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid white;
+    color: rgb(123, 116, 116);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder{
+    color: gray;
+}
+
+.search-btn{
+    display: inline-block;
+	width: 20%;
+	padding: 14px 30px 14px 15px;
+	border: 1px solid red;
+	outline: none;
+	border-radius: 30px;
+}
+.search-btn:hover{
+	background-color: black;
+	border: 1px solid red;
+}
+
+.btnn{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: 1px solid transparent;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:red;
+	color: white;
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+	top: 6px;
+	right: 6px;
+    transition: .4s;
+}
+.btnn:hover{
+	background-color: black;
+	border: 2px solid red;
+	cursor: pointer;
+}
+
+
+.meal-result{
+    margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#meal{
+    margin: 2.4rem 0;
+}
+.meal-item{
+    border-radius: 50px;
+	border-color: white;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
+}
+.meal-img img{
+    width: 100%;
+    display: block;
+	border: solid white;
+	border-top-left-radius: 15%;
+	border-top-right-radius: 15%;
+	height: auto;
+	
+}
+.meal-name{
+    padding: 1.5rem 0.5rem;
+	background-color: red;
+	color: black;
+	height: fit-content;
+	border-bottom-right-radius: 25%;
+	border-bottom-left-radius: 25%;
+	
+}
+.meal-name h3{
+    font-size: 1.4rem;
+	height: 4vh;
+    overflow-y: scroll;
+}
+.recipe-btn{
+    text-decoration: none;
+    color: white;
+    background: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+}
+.recipe-btn:hover{
+    background: black;
+	color: white;
+}
+
+/* meal details */
+.meal-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: var(--tenne-tawny);
+    border-radius: 1rem;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    display: none;
+    padding: 2rem 0;
+}
+.meal-details::-webkit-scrollbar{
+    width: 10px;
+}
+.meal-details::-webkit-scrollbar-thumb{
+    background: #f0f0f0;
+    border-radius: 2rem;
+}
+
+
+/* js related */
+.showRecipe{
+    display: block;
+	background-color: rgb(0, 0, 0);
+	height: 60vh;
+	border: solid white;
+}
+
+.meal-details-content{
+    margin: 2rem;
+}
+.meal-details-content p:not(.recipe-category){
+    padding: 1rem 0;
+}
+.recipe-close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.8rem;
+    background: rgb(0, 0, 0);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.recipe-title{
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+	color: white;
+}
+.recipe-category{
+    background-color: red;
+    font-weight: 600;
+    color: var(--tenne-tawny);
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+
+.recipe-instruct{
+    padding: 1rem 0;
+}
+.recipe-meal-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.recipe-link{
+    margin: 1.4rem 0;
+}
+.recipe-link a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.4s linear;
+}
+.recipe-link a:hover{
+    opacity: 0.8;
+}
+
+
+/*  */
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+#meal{
+	width: 85%;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 600px){
+    .meal-search-box{
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #meal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .meal-item{
+        margin: 0;
+    }
+    .meal-details{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #meal{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  red;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color: white;
+	bottom: 35px;
+	font-size: 14px; 
+} 
+
